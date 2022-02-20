@@ -34,6 +34,11 @@
   left: 961px;
   top: 35px;
 }
+
+.head__button_magic:hover{
+  background-color: #61A199;
+  ;
+}
 .head__button {
   display: flex;
   flex-direction: row;
@@ -47,6 +52,10 @@
   border: 1px solid rgba(27, 27, 27, 0.4);
   box-sizing: border-box;
   border-radius: 6px;
+}
+
+.menu__item-about-us_magic:hover{
+color:#61A199;
 }
 
 .menu__item-about-us {
@@ -64,6 +73,10 @@
   /* Black */
   color: #1B1B1B;
 }
+
+.menu__item-terms_magic:hover{
+  color:#61A199;
+}
 .menu__item-terms {
   position: absolute;
   width: 64px;
@@ -78,6 +91,10 @@
   /* identical to box height */
   /* Black */
   color: #1B1B1B;
+}
+
+.menu__item-questions_magic:hover{
+  color:#61A199;
 }
 .menu__item-questions {
   position: absolute;
@@ -378,12 +395,20 @@ color: #FFFFFF;
 opacity: 0.4;
 }
 
+.socials__link-vk_magic:hover{
+  border: 1px solid #3F3D56;
+}
+
 .socials__link-vk {
   position: absolute;
 width: 32px;
 height: 32px;
 left: 1276px;
 top: 46px;
+}
+
+.socials__link-inst_magic:hover{
+  border: 1px solid #3F3D56;
 }
 
 .socials__link-inst {
@@ -394,12 +419,17 @@ top: 46px;
   top: 46px;
 }
 
-.socials__link-faceb{
-  position: absolute;
-width: 32px;
-height: 32px;
-left: 1368px;
-top: 46px;
+.socials__link-faceb_magic:hover{
+  border: 1px solid #3F3D56;
 }
+
+.socials__link-faceb {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 1368px;
+  top: 46px;
+}
+
 
 /*# sourceMappingURL=%5Boutput.css%5D.map */

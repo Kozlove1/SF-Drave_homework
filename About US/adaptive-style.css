@@ -1,0 +1,463 @@
+
+.body {
+  position: relative;
+  width: 375px;
+  height: 1577px;
+  margin: 0px;
+  background: #FFFFFF;
+}
+  
+.head {
+  position: absolute;
+  width: 375px;
+  height: 90px;
+  left: 0px;
+  top: 0px;
+}
+.head__logo {
+  position: absolute;
+  width: 115px;
+  height: 28px;
+  left: 40px;
+  top: 31px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  /* Black */
+  color: #1B1B1B;
+}
+.burger-menu{
+display: block;
+position: absolute;
+right: 23px;
+top: 28px;
+}
+.head__menu {
+  display: none;
+  position: absolute;
+  width: 293px;
+  height: 19px;
+  right: 0px;
+  top: 35px;
+}
+
+.head__button_magic:hover{
+  background-color: #61A199;
+  ;
+}
+.head__button {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 30px;
+  position: absolute;
+  width: 106px;
+  height: 43px;
+  right: 40px;
+  top: 23px;
+  border: 1px solid rgba(27, 27, 27, 0.4);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.menu__item-about-us_magic:hover{
+color:#61A199;
+}
+
+.menu__item-about-us {
+  position: absolute;
+  width: 42px;
+  height: 19px;
+  right: 251px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Black */
+  color: #1B1B1B;
+}
+
+.menu__item-terms_magic:hover{
+  color:#61A199;
+}
+.menu__item-terms {
+  position: absolute;
+  width: 64px;
+  height: 19px;
+  right: 157px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Black */
+  color: #1B1B1B;
+}
+
+.menu__item-questions_magic:hover{
+  color:#61A199;
+}
+.menu__item-questions {
+  position: absolute;
+  width: 127px;
+  height: 19px;
+  right: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  /* Black */
+  color: #1B1B1B;
+}
+
+.drawTeam {
+  margin: 0px;
+  position: absolute;
+ 
+  left: 54px;
+  top: 108px;
+}
+.drawTeam_img {
+  width: 267.31px;
+  height: 202px;
+}
+
+h1{
+/* H1 Adaptive */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+/* Black */
+color: #1B1B1B;
+text-align: center;
+}
+
+.about-us__title {
+margin: 0px;
+position: absolute;
+width: 83px;
+height: 38px;
+left: 146px;
+top: 350px;
+
+
+}
+.about-us__info {
+  margin: 0px;
+  position: absolute;
+  width: 335px;
+  height: 144px;
+  left: 20px;
+  top: 398px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 147.3%;
+  /* or 24px */
+  text-align: center;
+  /* Black */
+  color: #1B1B1B;
+}
+h2{
+  margin: 0px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  /* identical to box height, or 29px */
+  text-align: center;
+  /* Black */
+  color: #1B1B1B;
+}
+.contacts__title {
+  /* Контакты */
+  position: absolute;
+  height: 29px;
+  left: 20px;
+  top: 40px;
+  width: 339px;
+  
+  
+  }
+.contacts {
+  position: absolute;
+  width: 375px;
+  height: 237px;
+  left: 0px;
+  top: 582px;
+  
+  background: #F7F9FB;
+ 
+}
+ .contacts__telephone {
+  width: 375px;
+  height: 237px;
+  left: 0px;
+  top: 0px;
+} 
+.contacts__telephone-text {
+  /* Телефон */
+position: absolute;
+width: 264px;
+height: 18px;
+left: 56px;
+top: 153px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 147.3%;
+/* identical to box height, or 18px */
+text-align: center;
+/* Gray 2 */
+color: #4F4F4F;
+}
+.contacts__telephone-item {
+  /* +7 912 123-45-67 */
+position: absolute;
+width: 264px;
+height: 21px;
+left: 56px;
+top: 176px;
+/* Text S */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 147.3%;
+/* identical to box height, or 21px */
+text-align: center;
+color: #000000;
+}
+.contacts__trait {
+  display: none;
+  position: absolute;
+  width: 1px;
+  height: 62px;
+  left: 720px;
+  top: 178px;
+
+  background: #C8C8CF;
+}
+ .contacts__email {
+  width: 375px;
+  height: 237px;
+  left: 0px;
+  top: 0px;
+}
+
+.contacts__email-text {
+position: absolute;
+width: 264px;
+height: 18px;
+left: 56px;
+top: 89px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 147.3%;
+/* identical to box height, or 18px */
+text-align: center;
+/* Gray 2 */
+color: #4F4F4F;
+}
+.contacts__email-item {
+position: absolute;
+width: 264px;
+height: 21px;
+left: 56px;
+top: 112px;
+/* Text S */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 147.3%;
+/* identical to box height, or 21px */
+text-align: center;
+
+color: #000000;
+}
+.team {
+  display: flex;
+  flex-wrap: row;
+  position: absolute;
+  width: 375px;
+  left: 0px;
+  top: 859px;
+}
+h3{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+text-align: center;
+margin: 0px;
+/* Black */
+color: #1B1B1B;
+}
+.team__title {
+position: absolute;
+height: 29px;
+width: 335px;
+left: 20px;
+top: 40px;
+}
+.team__column {
+width: 167px;
+height: 138px;
+}
+
+.item-team__icon {
+  position: absolute;
+  width: 80px;
+  top: 0px;
+  height: 80px;
+}
+.item-team__name {
+  position: absolute;
+  width: 167px;
+  top: 95px;
+  height: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 147.3%;
+  /* identical to box height, or 24px */
+  text-align: center;
+  color: #000000;
+}
+.item-team__proffesion {
+ /* СЕО */
+position: absolute;
+width: 167px;
+height: 18px;
+top: 120px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 147.3%;
+/* identical to box height, or 18px */
+text-align: center;
+/* Gray 3 */
+color: #828282;
+}
+.team_icon{
+  position: absolute;
+  left: 43px;
+  width: 80px;
+  height: 80px;
+}
+
+.ivan-box {
+  left: 20px;
+  top: 99px;
+}
+
+.aleksey-box {
+  left: 187px;
+  top: 99px;
+}
+
+.denis-box {
+  left: 20px;
+  top: 267px;
+}
+
+.nikolay-box {
+  left: 187px;
+  top: 267px;
+}
+
+.irina-box {
+  left: 20px;
+  top: 435px;
+}
+
+.mariya-box {
+  left: 187px;
+  top: 435px;
+}
+.footer {
+  position: absolute;
+  height: 125px;
+  width: 375px;
+  left: 0%;
+  right: 0%;
+  top: 1452px;
+  
+  background: #3F3D56;
+}
+.copywright {
+ /* © SkillDrive Inc. 2020 */
+position: absolute;
+height: 19px;
+left: 20px;
+top: 30px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+color: #FFFFFF;
+opacity: 0.4;
+}
+
+.socials__link-vk_magic:hover{
+  border: 1px solid #3F3D56;
+}
+
+.socials__link-vk {
+  position: absolute;
+width: 32px;
+height: 32px;
+left: 20px;
+top: 63px;
+}
+
+.socials__link-inst_magic:hover{
+  border: 1px solid #3F3D56;
+}
+
+.socials__link-inst {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 66px;
+  top: 63px;
+}
+
+.socials__link-faceb_magic:hover{
+  border: 1px solid #3F3D56;
+}
+
+.socials__link-faceb {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 112px;
+  top: 63px;
+}
+
+
+/*# sourceMappingURL=%5Boutput.css%5D.map */

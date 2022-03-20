@@ -1,0 +1,337 @@
+
+.body {
+  position: relative;
+  width: 1440px;
+  height: 1547px;
+  
+  background: #FFFFFF;
+  }
+  
+  .head {
+    position: absolute;
+    width: 1440px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+  }
+  .head__logo {
+    position: absolute;
+    width: 115px;
+    height: 28px;
+    left: 40px;
+    top: 31px;
+  }
+  
+  .burger-menu{
+    display: none;
+    position: absolute;
+    right: 23px;
+    top: 28px;
+    }
+  
+  .head__menu {
+    position: absolute;
+    width: 293px;
+    height: 19px;
+    left: 961px;
+    top: 35px;
+  }
+  
+  .head__button_magic:hover{
+    background-color: #61A199;
+    ;
+  }
+  .head__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 30px;
+    position: absolute;
+    width: 106px;
+    height: 43px;
+    right: 40px;
+    top: 23px;
+    border: 1px solid rgba(27, 27, 27, 0.4);
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  .menu-item{
+    text-decoration: none;
+  }
+  .menu__item-about-us_magic:hover{
+  color:#61A199;
+  }
+  
+  .menu__item-about-us {
+    position: absolute;
+    width: 42px;
+    height: 19px;
+    right: 251px;
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Black */
+    color: #1B1B1B;
+  }
+  
+  .menu__item-terms_magic:hover{
+    color:#61A199;
+  }
+  .menu__item-terms {
+    position: absolute;
+    width: 64px;
+    height: 19px;
+    right: 157px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Black */
+    color: #1B1B1B;
+  }
+  
+  .menu__item-questions_magic:hover{
+    color:#61A199;
+  }
+  .menu__item-questions {
+    position: absolute;
+    width: 127px;
+    height: 19px;
+    right: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Black */
+    color: #1B1B1B;
+  }
+  
+  .drawQuestion {
+    margin: 0px;
+    position: absolute;
+    left: 540px;
+    top: 170px;
+  }
+  .drawQuestion__img{
+    width: 360px;
+    height: 300.06px;
+  }
+  
+  h1{
+  /* H1 Desktop */
+    margin: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+/* identical to box height, or 77px */
+  text-align: center;
+
+  /* Black */
+
+  color: #1B1B1B;
+  }
+  
+  .question__title {
+    position: absolute;
+    width: 516px;
+    height: 77px;
+    left: 462px;
+    top: 531px;
+  }
+  .question__info {
+  /* Отвечаем на вопросы, которые у вас могут возникнуть. */
+    position: absolute;
+    width: 632px;
+    height: 35px;
+    left: 408px;
+    top: 638px;
+    margin: 0px;
+
+    /* Text L */
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 147.3%;
+    /* or 35px */
+
+
+    /* Black */
+
+    color: #1B1B1B;
+  }
+
+.questions__container {
+    display: block;
+    position: absolute;
+    top: 719px;
+}
+  
+.questions {
+    margin-left: 207px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+.question__text{
+  display: block;
+
+  /* Text M */
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 147.3%;
+  /* or 29px */
+
+  /* Black */
+
+  color: #1B1B1B;
+}
+
+.answer__text{
+  display: block;
+
+  /* Text M */
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 147.3%;
+  /* or 29px */
+  /* Black */
+
+  color: #1B1B1B;
+}
+
+.question__box_collapsible {
+  color: #1B1B1B;
+  padding: 18px;
+  text-align: left;
+  outline: none;
+  border: none;
+  margin-top: 14px;
+
+  width: 1026px;
+  height: 66px;
+
+/* #F7F7F8 */
+
+  background: #F7F7F8;
+  border-radius: 6px;
+}
+/* Style the collapsible content. Note: hidden by default */
+.answer__box {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.question__box_collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  background: #F7F7F8;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .question__box_collapsible:hover {
+  color: #61A199;
+  background: rgba(97, 161, 153, 0.15);
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
+  .footer {
+    position: absolute;
+    width: 1440px;
+    height: 124px;
+    left: 0px;
+    top: 1423px;
+    
+    background: #3F3D56;
+  }
+  .copywright {
+    position: absolute;
+    width: 152px;
+    height: 19px;
+    right: 1248px;
+    top: 53px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+    opacity: 0.4;
+  }
+  
+  .socials__link-vk_magic:hover{
+    border: 1px solid #3F3D56;
+  }
+  
+  .socials__link-vk {
+    position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 1276px;
+  top: 46px;
+  }
+  
+  .socials__link-inst_magic:hover{
+    border: 1px solid #3F3D56;
+  }
+  
+  .socials__link-inst {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1322px;
+    top: 46px;
+  }
+  
+  .socials__link-faceb_magic:hover{
+    border: 1px solid #3F3D56;
+  }
+  
+  .socials__link-faceb {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1368px;
+    top: 46px;
+  }
+  
+  
+  /*# sourceMappingURL=%5Boutput.css%5D.map */
+  

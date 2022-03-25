@@ -6,6 +6,7 @@
   margin: 0px;
   background: #FFFFFF;
 }
+
 .head {
   position: absolute;
   width: 1440px;
@@ -19,7 +20,7 @@
   height: 28px;
   left: 40px;
   top: 31px;
-  font-family: Rubik;
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -27,6 +28,14 @@
   /* Black */
   color: #1B1B1B;
 }
+
+.burger-menu{
+  display: none;
+  position: absolute;
+  right: 23px;
+  top: 28px;
+  }
+
 .head__menu {
   position: absolute;
   width: 293px;
@@ -53,7 +62,9 @@
   box-sizing: border-box;
   border-radius: 6px;
 }
-
+.menu-item{
+  text-decoration: none;
+}
 .menu__item-about-us_magic:hover{
 color:#61A199;
 }
@@ -64,7 +75,7 @@ color:#61A199;
   height: 19px;
   right: 251px;
  
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -83,7 +94,7 @@ color:#61A199;
   height: 19px;
   right: 157px;
   
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -101,7 +112,7 @@ color:#61A199;
   width: 127px;
   height: 19px;
   right: 0px;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -114,34 +125,33 @@ color:#61A199;
 .drawTeam {
   margin: 0px;
   position: absolute;
-  width: 397px;
-  height: 300px;
   left: 522px;
   top: 170px;
 }
+.drawTeam_img{
+  width: 397px;
+  height: 300px;
+}
 
-
-.about-us__title {
-margin: 0px;
-position: absolute;
-width: 165px;
-height: 77px;
-left: 638px;
-top: 531px;
-
+h1{
 /* H1 Desktop */
-
-font-family: Roboto;
+margin: 0px;
+font-family: 'Roboto';
 font-style: normal;
 font-weight: bold;
 font-size: 64px;
 line-height: 120%;
 /* identical to box height, or 77px */
+}
 
+.about-us__title {
+position: absolute;
+width: 165px;
+height: 77px;
+left: 638px;
+top: 531px;
 text-align: center;
-
 /* Black */
-
 color: #1B1B1B;
 }
 .about-us__info {
@@ -152,7 +162,7 @@ color: #1B1B1B;
   left: 258px;
   top: 638px;
   /* Text L */
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -161,6 +171,27 @@ color: #1B1B1B;
   text-align: center;
   /* Black */
   color: #1B1B1B;
+}
+h2{
+  margin: 0px;
+  /* H2 Desktop */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  /* identical to box height, or 58px */
+  text-align: center;
+  /* Black */
+  color: #1B1B1B;
+}
+.contacts__title {
+  position: absolute;
+  width: 224px;
+  height: 58px;
+  left: 607px;
+  top: 80px;
+  
 }
 
 .contacts {
@@ -182,7 +213,7 @@ background: #F7F9FB;
 }
 .contacts__telephone-text {
   /* Text S */
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -195,7 +226,7 @@ background: #F7F9FB;
   color: #4F4F4F;
 }
 .contacts__telephone-item {
-  font-family: Roboto;
+  font-family:'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -225,7 +256,7 @@ background: #F7F9FB;
 }
 .contacts__email-text {
   /* Text S */
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -238,7 +269,7 @@ background: #F7F9FB;
   color: #4F4F4F;
 }
 .contacts__email-item {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -250,16 +281,18 @@ background: #F7F9FB;
   color: #000000;
 }
 
-.contscts__title {
+.team {
   position: absolute;
-  width: 224px;
-  height: 58px;
-  left: 607px;
-  top: 80px;
-  margin: 0px;
-  
+  width: 980px;
+  height: 695px;
+  left: 229px;
+  top: 1244px;
+}
+
+h3{
+  margin: 0;
   /* H2 Desktop */
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -270,30 +303,13 @@ background: #F7F9FB;
   color: #1B1B1B;
 }
 
-.team {
-  position: absolute;
-  width: 980px;
-  height: 695px;
-  left: 229px;
-  top: 1244px;
-}
 .team__title {
   position: absolute;
-  margin: 0px;
   width: 203px;
   height: 58px;
   left: 389px;
   bottom: 637px;
-  /* H2 Desktop */
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 120%;
-  /* identical to box height, or 58px */
-  text-align: center;
-  /* Black */
-  color: #1B1B1B;
+  
 }
 .team__column {
   position: absolute;
@@ -311,7 +327,7 @@ background: #F7F9FB;
   width: 196px;
   height: 29px;
   top: 203px;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -335,6 +351,10 @@ background: #F7F9FB;
   text-align: center;
   /* Gray 3 */
   color: #828282;
+}
+.team_icon{
+  width: 180px;
+  height: 180px;
 }
 
 .ivan-box {

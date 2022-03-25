@@ -1,0 +1,352 @@
+
+.body {
+  position: relative;
+  width: 375px;
+  height: 1200px;
+  margin: 0px;
+  
+  background: #FFFFFF;
+  }
+  
+  .head {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+  }
+  .head__logo {
+    position: absolute;
+    width: 115px;
+    height: 28px;
+    left: 20px;
+    top: 20px;
+
+  }
+  
+  .burger-menu{
+    display:block;
+    position: absolute;
+    left: 334px;
+    right: 0px;
+    top: 23px;
+    }
+  
+  .head__menu {
+    display: none;
+    position: absolute;
+    width: 293px;
+    height: 19px;
+    left: 961px;
+    top: 35px;
+  }
+  
+  .head__button_magic:hover{
+    background-color: #61A199;
+    ;
+  }
+  .head__button {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 30px;
+    position: absolute;
+    width: 106px;
+    height: 43px;
+    right: 40px;
+    top: 23px;
+    border: 1px solid rgba(27, 27, 27, 0.4);
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  .menu-item{
+    text-decoration: none;
+  }
+  .menu__item-about-us_magic:hover{
+  color:#61A199;
+  }
+  
+  .menu__item-about-us {
+    position: absolute;
+    width: 42px;
+    height: 19px;
+    right: 251px;
+   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Black */
+    color: #1B1B1B;
+  }
+  
+  .menu__item-terms_magic:hover{
+    color:#61A199;
+  }
+  .menu__item-terms {
+    position: absolute;
+    width: 64px;
+    height: 19px;
+    right: 157px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Black */
+    color: #1B1B1B;
+  }
+  
+  .menu__item-questions_magic:hover{
+    color:#61A199;
+  }
+  .menu__item-questions {
+    position: absolute;
+    width: 127px;
+    height: 19px;
+    right: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Black */
+    color: #1B1B1B;
+  }
+  
+  .drawQuestion {
+    margin: 0px;
+    position: absolute;
+    left: 67px;
+    top: 108px;
+  }
+  .drawQuestion__img{
+    position: absolute;
+    width: 242px;
+    height: 202px;
+
+  }
+  
+  h1{
+    /* H1 Adaptive */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+
+    text-align: center;
+
+    /* Black */
+
+    color: #1B1B1B;
+  }
+  
+  .question__title {
+    position: absolute;
+    width: 257px;
+    height: 38px;
+    left: 59px;
+    top: 350px;
+  }
+
+    .question__info {
+      /* Отвечаем на вопросы, которые у вас могут возникнуть. */
+      position: absolute;
+      width: 100%;
+      height: 48px;
+      left: 0px;
+      top: 398px;
+
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 147.3%;
+      /* or 24px */
+
+      text-align: center;
+
+      /* Black */
+
+      color: #1B1B1B;
+      }
+    
+    .questions__container {
+        display: block;
+        position: absolute;
+        top: 476px;
+    }
+      
+    .questions {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+    
+    .question__text{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 147.3%;
+      /* or 21px */
+      /* Black */
+      
+      color: #1B1B1B;
+    }
+    .question__box_collapsible {
+      color: #1B1B1B;
+      text-align: left;
+      outline: none;
+      border: none;
+      margin-top: 3%;
+
+      width: 90%;
+      height: 4.5em;
+    
+    /* #F7F7F8 */
+    
+      background: #F7F7F8;
+      border-radius: 6px;
+    }
+    
+    .answer__text{
+      /* Text S */
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 147.3%;
+      /* or 21px */
+      
+      /* Black */
+      color: #1B1B1B;
+    }
+    
+    .answer__box {
+      padding-left: 1em;
+      width: 90%;
+      background-color: #FFFFFF;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+    
+    .answer__button__up{
+      padding-right: 5%;
+      float:right;
+      width: 13px;
+      display: none;
+      position: relative;
+
+    }
+    
+    .active > .answer__button__up {
+      display: block;
+      position: relative;
+    }
+    
+    .answer__button__down{
+      padding-right: 5%;
+      float:right;
+      width: 13px;
+      position: relative;
+
+    }
+    
+    .active > .answer__button__down {
+      display: none;
+      position: relative;
+    }
+    
+    .question__box_collapsible:after {
+      font-size: 13px;
+      background: #F7F7F8;
+      margin-left: 5px;
+    }
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .question__box_collapsible:hover {
+      color: #61A199;
+      background: rgba(97, 161, 153, 0.15);
+    }
+ 
+  .footer {
+    position: absolute;
+    width: 375px;
+    height: 125px;
+    top: 1075px;
+
+    background: #3F3D56;
+  }
+  .copywright {
+    /* © SkillDrive Inc. 2020 */
+    position: absolute;
+    height: 19px;
+    left: 20px;
+    top: 30px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.4;
+  }
+  
+  .socials__link-vk_magic:hover{
+    border: 1px solid #3F3D56;
+  }
+  
+  .socials__link-vk {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 22.67px;
+  top: 65.67px;
+  }
+  
+  .socials__link-inst_magic:hover{
+    border: 1px solid #3F3D56;
+  }
+  
+  .socials__link-inst {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 68.67px;
+    top: 65.67px;
+  }
+  
+  .socials__link-faceb_magic:hover{
+    border: 1px solid #3F3D56;
+  }
+  
+  .socials__link-faceb {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 114.67px;
+    top: 65.72px;
+  }
+  
+  
+  

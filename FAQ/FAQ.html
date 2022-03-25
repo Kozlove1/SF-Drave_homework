@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" media="screen and (max-width: 375px)" href="FAQadaptive.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <title>SF-Drive</title>
+</head>
+<body class="body">
+    <header class ="head"> 
+            <a class ="head__logo"><img src="../About US/img/Logo.png" width="115px" height="28px" alt="Логотип"></a>
+            <div class = 'burger-menu'>
+                <img src="../About US/img/burger/Vector Burger.png" alt="развернуть меню">
+            </div>
+        <nav class ="head__menu">
+            <a href="#" class="menu-item menu__item-about-us menu__item-about-us_magic" alt='О нас'>О нас</a>
+            <a href="#" class="menu-item menu__item-terms menu__item-terms_magic" alt='Условия'>Условия</a>
+            <a href="#" class="menu-item menu__item-questions menu__item-questions_magic" alt='Частые Вопросы'>Частые Вопросы</a>
+        </nav>
+            <button class ="head__button head__button_magic" type="submit">Войти</button>
+    </header>
+
+    <main class="main">
+            <div class="drawQuestion">
+                <img class="drawQuestion__img" src="../FAQ/img/undraw_questions_75e0 1.png"  alt="Картинка команды">
+            </div>
+
+                <div class="question__title">
+                    <h1>Частые вопросы</h1>
+                </div>
+
+                    <p class="question__info">
+                        Отвечаем на вопросы, которые у вас могут возникнуть.
+                    </p>
+            
+            <section class="questions__container">
+
+            <div class="questions">
+                <button type="button" class="question__box_collapsible question__text">Могу ли я отменить бронь?
+                    <img class="answer__button__down" src="../FAQ/img/Down.png" alt="раскрыть ответ">
+                    <img class=" answer__button__up activeButtonAnswer" src="../FAQ/img/Up.png" alt="свернуть ответ">
+                </button>
+                <div class="answer__box">
+                    <p class="answer__text">Можете, но за это будет списана коммисия по тарифу соответствующему вашему региону</p>
+                </div>
+                <button type="button" class="question__box_collapsible question__text">Могу ли я вернуть деньги, если не подошёл автомобиль?
+                    <img class="answer__button__down" src="../FAQ/img/Down.png" alt="раскрыть ответ">
+                    <img class=" answer__button__up activeButtonAnswer" src="../FAQ/img/Up.png" alt="свернуть ответ">
+                </button>
+                <div class="answer__box">
+                    <p class="answer__text">Да, если решение было принято до начала аренды автомобиля</p>
+                </div>
+                <button type="button" class="question__box_collapsible question__text">Что делать, если случилось ДТП?
+                    <img class=" answer__button__down" src="../FAQ/img/Down.png" alt="раскрыть ответ">
+                    <img class=" answer__button__up activeButtonAnswer" src="../FAQ/img/Up.png" alt="свернуть ответ">
+                </button>
+                <div class="answer__box">
+                    <p class="answer__text">Звонить в службу поддержки</p>
+                </div>
+                <button type="button" class="question__box_collapsible question__text">Могу ли я оставить автомобиль в удобном для меня месте?
+                    <img class=" answer__button__down" src="../FAQ/img/Down.png" alt="раскрыть ответ">
+                    <img class=" answer__button__up activeButtonAnswer" src="../FAQ/img/Up.png" alt="свернуть ответ">
+                </button>
+                <div class="answer__box">
+                    <p class="answer__text">Данный вопрос обсуждается с собственником, но как правило автомобиль нужно вернуть туда, где вы его получили.</p>
+                </div>
+                <button type="button" class="question__box_collapsible question__text">Что делать, если собственник просит заплатить ему напрямую?
+                    <img class=" answer__button__down" src="../FAQ/img/Down.png" alt="раскрыть ответ">
+                    <img class=" answer__button__up activeButtonAnswer" src="../FAQ/img/Up.png" alt="свернуть ответ">
+                </button>
+                <div class="answer__box">
+                    <p class="answer__text">Отказать, все платежи проходят через нас</p>
+                </div>
+                <button type="button" class="question__box_collapsible question__text">Должен ли я заправлять автомобиль?
+                    <img  class=" answer__button__down" src="../FAQ/img/Down.png" alt="раскрыть ответ">
+                    <img  class=" answer__button__up" src="../FAQ/img/Up.png" alt="свернуть ответ">
+                </button>
+                <div class="answer__box">
+                    <p class="answer__text">Если есть в этом необходимость</p>
+                </div>
+            </div>  
+            </section>
+    </main>
+
+    <footer class="footer">
+        <div class="copywright">© SkillDrive Inc. 2020</div>
+            <a class="socials__link-faceb socials__link-faceb_magic" href='#'><img src="../About US/img/social/faceBook.png"  alt="facebook"></a>
+            <a class="socials__link-inst socials__link-inst_magic" href='#'><img src="../About US/img/social/instagramm.png"  alt="instagramm"></a>
+            <a class="socials__link-vk socials__link-vk_magic" href='#'><img src="../About US/img/social/vk.png"  alt="vkontakte"></a>
+    </footer>
+</body>
+<script src="../FAQ/collapsible.js"></script>
+<script src="../FAQ/UpDownButton.js"></script>
+</html>

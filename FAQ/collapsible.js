@@ -1,4 +1,4 @@
-const coll = document.querySelectorAll(".question__box_collapsible");
+const coll = document.querySelectorAll(".questions__box-collapsible");
 
 
   for (let i = 0; i < coll.length; i++){
@@ -8,7 +8,7 @@ const coll = document.querySelectorAll(".question__box_collapsible");
       if (content.style.maxHeight){
         content.style.maxHeight = null;
       } else {
-        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.maxHeight = content.scrollHeight + "em";
       } 
     });
   }

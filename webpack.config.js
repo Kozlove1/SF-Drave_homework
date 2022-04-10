@@ -6,6 +6,7 @@ module.exports = {
     output: {
         filename: 'main.js'
     },
+    mode: 'development',
     plugins: [new MiniCssExtractPlugin()],
       module: {
         rules: [

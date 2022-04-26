@@ -1,51 +1,47 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const OptimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin");
-const TerserWebpackPlugin = require("terser-webpack-plugin");
-
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'production',
     entry: './src/FaqNew.js',
     output: {
         filename: 'main.js'
     },
-    mode: 'development',
     plugins: [
       new MiniCssExtractPlugin(),
+      new OptimizeCssAssetsPlugin(),
+      new TerserPlugin(),
       new HtmlWebpackPlugin({
-        template: "C:/Users/User/VScode/SF-Drave_homework/src/FAQ.pug"
-    }),
-      new OptimizeCssAssetsWebpackPlugin(),
-      new TerserWebpackPlugin(),
-    ],
+        template: './src/FAQ.pug',
+        filename: 'FAQ.html'
 
-    optimization: {
+      }),
+
+
+    ],
+    optimization:{
       minimize: true,
-      minimizer: [
-        new OptimizeCssAssetsWebpackPlugin(),
-        new TerserWebpackPlugin(),
-        ],
+      minimizer: [new TerserPlugin(), new OptimizeCssAssetsPlugin()]
     },
-      module: {
-        rules: [
-          { test: /\.css$/,
-           use: [
-            {
-              loader: MiniCssExtractPlugin.loader,
-              options: {
-                esModule: true,
-              },
-            },
-            'css-loader',
-       ], },
-       {
-       test: /\.pug$/,
-       loader: 'pug-loader',
-       options: {
-       pretty: true
-       }
-      },
-        ]
-      }
-}
+    module: {
+      rules:[
+        {
+          use: [{
+            loader: MiniCssExtractPlugin.loader,
+            options:{
+              esModule: true,
+            }
+          }, 'css-loader'],
+          test: /\.css$/
+        },
+        {
+          test:/\.pug$/,
+          use: 'pug-loader'
+        }
+
+
+      ]
+    }
+};

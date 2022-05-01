@@ -1,15 +1,17 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": false
-    },
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
+    "extends": ["@salesforce/eslint-config-lwc/recommended"],
     "rules": {
-        
-                "semi": ["warn", "always"],
-                "quotes": ["warn", "double"]
-        }
-    };
+        // enable additional rules
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+
+        // override configuration set by extending "eslint:recommended"
+        "no-empty": "warn",
+        "no-cond-assign": ["error", "always"],
+
+        // disable rules from base configurations
+        "for-direction": "off",
+    }
+};

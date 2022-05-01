@@ -1,7 +1,4 @@
-import "./FaqNew.css";
-
 const coll = document.querySelectorAll(".questions__box-collapsible");
-
 
   for (let i = 0; i < coll.length; i++){
     coll[i].addEventListener("click", function (){

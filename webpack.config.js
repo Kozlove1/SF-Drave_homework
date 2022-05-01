@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   stats: {children: true},
@@ -23,6 +24,7 @@ module.exports = {
         template: "./src/AboutUs/aboutUs.pug",
         filename: "aboutUs.html"
       }),
+      new StylelintPlugin(),
     ],
 
     optimization:{

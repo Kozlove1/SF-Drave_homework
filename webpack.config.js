@@ -1,26 +1,30 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: 'production',
-    entry: './src/FaqNew.js',
-    output: {
-        filename: 'main.js'
-    },
+  stats: {children: true},
+  mode: "production",
+  entry: "./src/FAQ/FaqNew.js",
+  output: {
+    filename: "main.js",
+  },
+  
     plugins: [
       new MiniCssExtractPlugin(),
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
-        template: './src/FAQ.pug',
-        filename: 'FAQ.html'
-
+        template: "./src/FAQ/FaqNew.pug",
+        filename: "FAQ.html"
       }),
-
-
+      new HtmlWebpackPlugin({
+        template: "./src/AboutUs/aboutUs.pug",
+        filename: "aboutUs.html"
+      }),
     ],
+
     optimization:{
       minimize: true,
       minimizer: [new TerserPlugin(), new OptimizeCssAssetsPlugin()]
@@ -33,15 +37,26 @@ module.exports = {
             options:{
               esModule: true,
             }
-          }, 'css-loader'],
+          }, "css-loader"],
           test: /\.css$/
         },
         {
-          test:/\.pug$/,
-          use: 'pug-loader'
-        }
-
-
+          test: /\.pug$/,
+          loader: "pug-loader",
+          options: {
+          pretty: true
+				}
+        },
+        {
+          test: /\.tsx?$/,
+          use: "ts-loader",
+          exclude: /node_modules/,
+        },
+        // {
+        //   test:/\.js$/,
+        //   exclude: /node_modules/,
+        //   use: "eslint-loader"
+        // }
       ]
     }
 };

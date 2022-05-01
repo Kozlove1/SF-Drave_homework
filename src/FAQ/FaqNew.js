@@ -1,4 +1,4 @@
-import './FaqNew.css';
+import "./FaqNew.css";
 
 const coll = document.querySelectorAll(".questions__box-collapsible");
 

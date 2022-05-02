@@ -1,7 +1,7 @@
 /* eslint-disable line-comment-position */
 module.exports = {
   root: true,
-  extends: ['webpack'],
+  extends: ['webpack','eslint:recommended'],
   rules: {
     'global-require': 'off',
     'import/no-dynamic-require': 'off',

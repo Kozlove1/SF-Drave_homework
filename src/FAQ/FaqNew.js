@@ -1,13 +1,14 @@
+/* eslint-disable @lwc/lwc/no-document-query */
 const coll = document.querySelectorAll(".questions__box-collapsible");
 
-  for (let i = 0; i < coll.length; i++){
+for (let i = 0; i < coll.length; i++){
     coll[i].addEventListener("click", function (){
-      this.classList.toggle("active");
-      const content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "em";
-      } 
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "em";
+        } 
     });
-  }
+}

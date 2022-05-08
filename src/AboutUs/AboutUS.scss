@@ -355,7 +355,7 @@ template {
 }
 
 /* varibales */
-$contactsSection-color: #f7f9fb;
+$contacts-section-color: #f7f9fb;
 $hover-question-color: rgb(97 161 153 / 10%);
 $click-question-color: rgb(97 161 153 / 15%);
 $click-text-question-color: #61a199;
@@ -367,9 +367,7 @@ $footer-color: #3f3d56;
     @media screen and (min-width: 376px) {
       @content;
     }
-  }
-
-  @else if $point == small {
+  } @else if $point == small {
     @media screen and (max-width: 375px) {
       @content;
     }

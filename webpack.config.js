@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -6,15 +7,29 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
+
+
 module.exports = {
-  stats: { children: true },
-  mode: 'production',
-  entry: './src/FAQ/FaqNew.js',
-  output: {
-    filename: 'main.js',
+  devtool: 'inline-source-map',
+  mode: 'development',
+  entry: {
+    faq: './src/FAQ/FaqNew.js',
+    abotUs: './src/AboutUs/AboutUs.js',
   },
   devServer: {
-    contentBase: './dist',
+    historyApiFallback: false,
+    open: true,
+    compress: true,
+    hot: true,
+    port: 3001,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+  },
+
+  output: {
+    asyncChunks: true,
+    chunkFilename: '[name].js',
   },
 
   plugins: [
@@ -22,12 +37,16 @@ module.exports = {
     new CssMinimizerPlugin(),
     new TerserPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/FAQ/FaqNew.pug',
-      filename: 'FAQ.html',
+      title: 'Development',
+      template: 'src/FAQ/FaqNew.pug',
+      filename: 'faq.html',
+      chunks: ['faq'],
     }),
     new HtmlWebpackPlugin({
-      template: './src/AboutUs/aboutUs.pug',
-      filename: 'aboutUs.html',
+      title: 'Development',
+      template: 'src/AboutUs/AboutUs.pug',
+      filename: 'abotUs.html',
+      chunks: ['abotUs'],
     }),
     new StylelintPlugin(),
     new ESLintPlugin(),
@@ -37,6 +56,7 @@ module.exports = {
     minimize: true,
     minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
   },
+
   module: {
     rules: [
       {
@@ -60,8 +80,14 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
-
-
+      {
+        test: /\.(png|jpg|svg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'img',
+        },
+      },
     ],
   },
 };

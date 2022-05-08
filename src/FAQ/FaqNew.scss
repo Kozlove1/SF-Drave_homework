@@ -381,9 +381,7 @@ $footer-color: #3f3d56;
     @media screen and (min-width: 376px) {
       @content;
     }
-  }
-
-  @else if $point == small {
+  } @else if $point == small {
     @media screen and (max-width: 375px) {
       @content;
     }

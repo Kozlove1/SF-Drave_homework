@@ -1,11 +1,15 @@
 
   {
-    "extends": "stylelint-config-standard",
-    "rules": {
+    "extends": "stylelint-config-standard-scss",
+      "rules": {
       "color-no-invalid-hex": true,
       "selector-class-pattern": null,
       "font-family-no-missing-generic-family-keyword": null,
       "at-rule-no-unknown": null,
-      "declaration-block-no-redundant-longhand-properties": null
+      "declaration-block-no-redundant-longhand-properties": null,
+      "no-eol-whitespace": null,
+      "at-rule-empty-line-before": null,
+      "block-closing-brace-newline-after": null,
+      "block-closing-brace-space-after": null
     }
   }
